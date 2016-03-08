@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+body
+{
+	margin: 0;
+}
+#d1{
+	width: 100%;
+	height: 10%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF6347;
+}
+#d2 {
+    
+    margin: 30px 25px 15px 25px;
+    background-color: #4682B4;
+     text-align:center;
+     height: 5%;
+}
+#d3
+{
+ margin-right: 500px;
+    margin-left: 500px;
+border: solid black;
+height:100%;
+border-width: .5px;
+}
+table
+{
+	padding-left: 22px;
+	border: 2px;
+	margin-bottom: 15px;
+
+}
+ td {
+  
+    padding: 0px;
+    }
+ #bor
+  {
+
+  	border-right: 0px white;
+  	border-top: 0px white;
+  	border-left: 0px white;
+  	border-bottom: 1px solid gainsboro;
+  }
+a:link {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #00BFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+</style>
+<script>
+function validateForm() {
+    var x = document.email.value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<div id="d3">
+<div id="d1">
+<h1 style="color:white;font-family:calibari;text-align:left margin-left:50px;padding-top:1px">Sign Up
+</h1>
+
+</div>
+<div id="d2">
+<center>
+<img src="img/fb.jpg" width="20px" height="20px" style="display: inline;margin-top: 5px;position: relative;">
+<h3 style="color:white;font-family:calibari;display: inline;">FACEBOOK</h3>
+</center>
+</div>
+<table width=93% height=2%>
+	<tr>
+		<td  style="background-color: #808080">
+			<center><img src="img/git.png" width="30px" height="30px" ></center>
+		</td>
+		<td  style="background-color: #FF6347;">
+			<center><img src="img/g.png" width="30px" height="30px"  ></center>
+		</td>
+		<td style="background-color: #00BFFF;">
+			<center><img src="img/t.png" width="30px" height="30px"  ></center>
+		</td>
+	</tr>
+</table>
+<div id="bor" style="display: inline-block;width:132px;margin-left: 22px" >
+</div>
+<div style="display: inline;">
+<img src="img/e_mail.png" width="5%" height="5%" >
+</div>
+<div id="bor" style="width:132px;display: inline-block;">
+</div>
+<div style="margin-left: 23PX;margin-top: 30px">
+<input id="bor" type="text" name="email" placeholder="Email"  max="100" required style="width:287px">
+</input>
+<input id="bor" type="text" name="name" placeholder="Full Name" max="100" required style="width:287px;margin-top: 30px">
+</input>
+<input id="bor" type="password" name="password" value="Password" max="100" required style="width:287px;margin-top: 30px">
+</input>
+</div>
+<p style="margin-left: 22px">By signing up you agree to our <span style="color: #00BFFF">Privacy Policy</span> and <span style="color: #00BFFF">EULA</span>
+</p>
+<footer style="position: fixed;bottom: 0px;height: 40px">
+	<a href="signin.htm" onclick="validateForm()" style="margin-left: 22px;bottom: 30px"><b>Log In</b></a>
+	<a href="ab.htm" style="margin-left: 180px;"><b>Sign Up</b></a>  
+</footer>
+</div>
+</body>
+</html>
